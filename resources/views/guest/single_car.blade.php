@@ -60,17 +60,17 @@ Car Bookings - {{$car->car_name}}
                                 <div class="owl-carousel owl-theme">
                                     <div class="item">
                                         <div class="lr_bc_slider_img_wrapper">
-                                            <img src="{{asset('images/bc2.jpg')}}" alt="fresh_food_img">
+                                            <img src="{{ asset('/storage/images')}}/{{$car->image1}}" alt="fresh_food_img">
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="lr_bc_slider_img_wrapper">
-                                            <img src="{{asset('images/bc3.jpg')}}" alt="fresh_food_img">
+                                            <img src="{{ asset('/storage/images')}}/{{$car->image2}}" alt="fresh_food_img">
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="lr_bc_slider_img_wrapper">
-                                            <img src="{{asset('images/bc4.jpg')}}" alt="fresh_food_img">
+                                            <img src="{{ asset('/storage/images')}}/{{$car->image3}}" alt="fresh_food_img">
                                         </div>
                                     </div>
                                 </div>
@@ -186,42 +186,7 @@ Car Bookings - {{$car->car_name}}
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="x_slider_select">
-                                                    <select class="myselect">
-                                                        <option>09</option>
-                                                        <option>01</option>
-                                                        <option>02</option>
-                                                        <option>03</option>
-                                                    </select> <i class="fa fa-clock-o"></i>
-                                                </div>
-                                                <div class="x_slider_select x_slider_select2">
-                                                    <select class="myselect">
-                                                        <option>50</option>
-                                                        <option>40</option>
-                                                        <option>03</option>
-                                                        <option>02</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="x_slider_select">
-                                                    <select class="myselect">
-                                                        <option>09</option>
-                                                        <option>01</option>
-                                                        <option>02</option>
-                                                        <option>03</option>
-                                                    </select> <i class="fa fa-clock-o"></i>
-                                                </div>
-                                                <div class="x_slider_select x_slider_select2">
-                                                    <select class="myselect">
-                                                        <option>50</option>
-                                                        <option>40</option>
-                                                        <option>03</option>
-                                                        <option>02</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                         
                                             <div class="col-md-12">
                                                 <div class="x_slider_checkbox_bottom float_left">
                                                     <div class="x_slider_checout_left">

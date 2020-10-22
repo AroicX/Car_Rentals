@@ -13,68 +13,55 @@ class CarSeeder extends Seeder
      * @return void
      */
 
-
-    public function  generatePlateNum($length) {
+    public function generatePlateNum($length)
+    {
         $key = '';
-        $keys = array_merge(range(0, 9),range('a-z','A-Z'));
+        $keys = array_merge(range(0, 9), range('a-z', 'A-Z'));
         for ($i = 0; $i < $length; $i++) {
             $key .= $keys[array_rand($keys)];
         }
         return $key;
     }
 
-
-
     public function run()
     {
         $faker = Faker::create('App\Car');
 
-
-
-
-        for ($i=0; $i <= 200 ; $i++) {
-            $types = array("Toyota", "Honda","Audi", "Hyundia","Kia",'Nissan');
-            $models = array("regular", "special");
+        for ($i = 0; $i <= 200; $i++) {
+            $types = ['Toyota', 'Honda', 'Audi', 'Hyundia', 'Kia', 'Nissan'];
+            $models = ['regular', 'special'];
 
             $selectType = array_rand($types);
             $selectModel = array_rand($models);
-            $case = NULL;
+            $case = null;
 
-            switch ($types[$selectType]){
-                case  'Toyota':
+            switch ($types[$selectType]) {
+                case 'Toyota':
                     $case = 'T';
                     break;
-                case  'Honda':
+                case 'Honda':
                     $case = 'H';
                     break;
-                case  'Audi':
+                case 'Audi':
                     $case = 'A';
                     break;
-                case  'Kia':
+                case 'Kia':
                     $case = 'K';
                     break;
 
-                break;
+                    break;
             }
-
 
             DB::table('cars')->insert([
                 'client_id' => 1,
                 'car_type' => $types[$selectType],
-                'car_model' => $case.$faker->randomNumber(3),
+                'car_model' => $case . $faker->randomNumber(3),
                 'car_name' => $faker->name(),
                 'plate_num' => $this->generatePlateNum(8),
                 'hire_cost' => $faker->randomNumber(5),
-                'capacity' => 4
-
-
-
-
-
+                'capacity' => 4,
+                'car_color' => '#202245',
             ]);
         }
     }
-
-
-
 }

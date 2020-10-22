@@ -55,8 +55,8 @@
             </div>
             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
                 <div class="hs_navi_cart_wrapper  d-none d-sm-none d-xs-none d-md-block d-lg-block d-xl-block">
-                    <div class="dropdown-wrapper menu-button menu_button_end"> <a class="menu-button" href="#"><i
-                                class="flaticon-shopping-cart"></i><span>3</span></a>
+                <div class="dropdown-wrapper menu-button menu_button_end"> <a class="menu-button" href="{{url('/home')}}"><i
+                                class="fa fa-home"></i></a>
                      
                     </div>
                 </div>

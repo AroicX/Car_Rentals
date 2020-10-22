@@ -63,9 +63,21 @@ My Reservation
         color: #242424;
     }
 
+    .link{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        color: blue;
+        text-decoration: none;
+        padding: 10px 0px;
+    }
+
 </style>
 
 <div class="container py-5">
+
+
+    <a  class="link" href="{{url('/cars')}}">Go to Reservations</a>
 
     <div class="row" id="reservationDeck">
         @foreach ($myReservation as $reserved)
@@ -147,13 +159,14 @@ My Reservation
                             <p id="car_type"></p>
                             <li>Car Model</li>
                             <p id="car_model"></p>
-                            <img class="img-responsive" id="selected-vehicle-image" src="./img/vehicle1.jpg"
+                            <img class="img-responsive" id="selected-vehicle-image" src=""
                                 alt="Vehicle">
                         </ul>
                     </div>
 
                 </div>
 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta, ex et debitis quas odio dolor? Eveniet porro quod voluptate odit temporibus, similique quisquam totam nihil pariatur rerum dolore iste?
 
 
             </div>
@@ -191,6 +204,8 @@ My Reservation
                     $('.modal-title').html(
                         `Reservation ID: <span class="label label-id">${data.reservation_id}</span>`
                     );
+                    var pathFinder = "{{asset('/storage/images/')}}";
+
                     $('#reserve_id').val(data.reservation_id);
                     $('#location').html(data.location);
                     $('#pick-up').html(data.pick_up);
@@ -199,6 +214,10 @@ My Reservation
                     $('#status').html(data.status);
                     $('#car_type').html(car.car_type);
                     $('#car_model').html(car.car_model);
+                    $('#selected-vehicle-image').attr('src',`${pathFinder}/${car.image1}`);
+
+                    console.log( `${pathFinder}/${car.image1}`);
+
 
                     if (data.status == 'Completed') {
                         $('.modal-footer').hide();

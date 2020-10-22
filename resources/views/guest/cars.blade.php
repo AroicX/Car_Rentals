@@ -89,224 +89,8 @@ Car Bookings - Forbes Rentals
 <div class="x_car_book_sider_main_Wrapper float_left" style="margin: 100px 0px">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
-                <div class="x_car_book_left_siderbar_wrapper float_left">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="x_slider_form_main_wrapper float_left x_slider_form_main_wrapper_ccb">
-                                <div
-                                    class="x_slider_form_heading_wrapper x_slider_form_heading_wrapper_carbooking float_left">
-                                    <h3>Let’s find your perfect car</h3>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="x_slider_form_input_wrapper float_left">
-                                            <h3>Pick-up Location</h3>
-                                            <input type="text" placeholder="City, Airport, Station, etc.">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="x_slider_form_input_wrapper float_left">
-                                            <h3>Drop-off Location</h3>
-                                            <input type="text" placeholder="City, Airport, Station, etc.">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-sec-header">
-                                            <h3>Pick-up Date</h3>
-                                            <label class="cal-icon">Pick-up Date
-                                                <input type="text" placeholder="Tue 16 Jan 2018"
-                                                    class="form-control datepicker">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="x_slider_select">
-                                            <select class="myselect">
-                                                <option>09</option>
-                                                <option>01</option>
-                                                <option>02</option>
-                                                <option>03</option>
-                                            </select> <i class="fa fa-clock-o"></i>
-                                        </div>
-                                        <div class="x_slider_select x_slider_select2">
-                                            <select class="myselect">
-                                                <option>50</option>
-                                                <option>40</option>
-                                                <option>03</option>
-                                                <option>02</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-sec-header">
-                                            <h3>Drop-Off Date</h3>
-                                            <label class="cal-icon">Pick-up Date
-                                                <input type="text" placeholder="Tue 16 Jan 2018"
-                                                    class="form-control datepicker">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="x_slider_select">
-                                            <select class="myselect">
-                                                <option>09</option>
-                                                <option>01</option>
-                                                <option>02</option>
-                                                <option>03</option>
-                                            </select> <i class="fa fa-clock-o"></i>
-                                        </div>
-                                        <div class="x_slider_select x_slider_select2">
-                                            <select class="myselect">
-                                                <option>50</option>
-                                                <option>40</option>
-                                                <option>03</option>
-                                                <option>02</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="x_slider_checkbox float_left">
-                                            <input type="checkbox" id="c2" name="cb">
-                                            <label for="c2">Driver age is between 30-65 &nbsp;<i
-                                                    class="fa fa-question-circle"></i>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="x_slider_checout_right x_slider_checout_right_carbooking">
-                                            <ul>
-                                                <li><a href="#">search <i class="fa fa-arrow-right"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <!-- Filter Results -->
-                            <div class="car-filter accordion car_booking_onliy_side">
-                                <h3>Filter Results</h3>
-                                <hr>
-                                <!-- Resources -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title"> <a data-toggle="collapse" href="#collapseOne"
-                                                class="collapse"> Resources</a> </h5>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show">
-                                        <div class="panel-body">
-                                            <div class="x_slider_checkbox x_slider_checkbox_bottom_filter_use">
-                                                <input type="checkbox" id="c3" name="cb">
-                                                <label for="c3">GPS Device</label>
-                                            </div>
-                                            <div class="x_slider_checkbox x_slider_checkbox_bottom_filter_use">
-                                                <input type="checkbox" id="c4" name="cb">
-                                                <label for="c4">Babyseats</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- Company -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title"> <a data-toggle="collapse" href="#collapseTwo"
-                                                class="collapse"> Company</a> </h5>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse show">
-                                        <div class="panel-body">
-                                            <div class="radio">
-                                                <div class="fisrt">
-                                                    <input type="radio" name="radio1" id="radio1" value="option1"
-                                                        checked="">
-                                                    <label for="radio1">Company Name</label>
-                                                </div>
-                                                <div class="fisrt">
-                                                    <input type="radio" name="radio1" id="radio2" value="option2">
-                                                    <label for="radio2">Other One</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- Category -->
-                                <div class="x_car_book_fillter_select_box">
-                                    <h5>Category</h5>
-                                    <select class="myselect">
-                                        <option>Please Select</option>
-                                        <option>Seadan</option>
-                                        <option>SUV</option>
-                                        <option>Mini</option>
-                                        <option>Bus</option>
-                                    </select>
-                                </div>
-                                <hr>
-                                <div class="x_car_book_fillter_select_box">
-                                    <h5>Car Brand</h5>
-                                    <select class="myselect">
-                                        <option>- Please Select -</option>
-                                        <option>BMW</option>
-                                        <option>Honda</option>
-                                        <option>Toyato</option>
-                                        <option>Audi</option>
-                                        <option>Fort</option>
-                                        <option>Nissan</option>
-                                    </select>
-                                </div>
-                                <hr>
-                                <!-- Car Model -->
-                                <div class="x_car_book_fillter_select_box">
-                                    <h5>Car Model</h5>
-                                    <select class="myselect">
-                                        <option>- Please Select -</option>
-                                        <option>- 2010 -</option>
-                                        <option>- 2011 -</option>
-                                        <option>- 2012 -</option>
-                                        <option>- 2013 -</option>
-                                        <option>- 2014 -</option>
-                                        <option>- 2015 -</option>
-                                        <option>- 2016 -</option>
-                                        <option>- 2017 -</option>
-                                        <option>- 2018 -</option>
-                                    </select>
-                                </div>
-                                <hr>
-                                <!-- Attributes -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title"> <a data-toggle="collapse" href="#collapseThree"
-                                                class="collapse"> Attributes</a> </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse show">
-                                        <div class="panel-body">
-                                            <div class="x_slider_checkbox x_slider_checkbox_bottom_filter_use">
-                                                <input type="checkbox" id="c10" name="cb">
-                                                <label for="c10">Diesel</label>
-                                            </div>
-                                            <div class="x_slider_checkbox x_slider_checkbox_bottom_filter_use">
-                                                <input type="checkbox" id="c11" name="cb">
-                                                <label for="c11">Hybrid</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div
-                                    class="x_slider_checout_right x_slider_checout_right_carbooking x_slider_checout_right_carbooking_fiter">
-                                    <ul>
-                                        <li><a href="#">filter <i class="fa fa-arrow-right"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12">
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="x_carbooking_right_section_wrapper float_left">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -347,10 +131,15 @@ Car Bookings - Forbes Rentals
                                             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                                 <div class="x_car_offer_main_boxes_wrapper float_left">
                                                     <div class="x_car_offer_starts float_left">
-                                                       <div class="color" style="width: 20px; height: 20px; padding: 10px; background:{{$car->car_color}}" title="color"></div>
+                                                        <div class="color"
+                                                            style="width: 20px; height: 20px; padding: 10px; background:{{$car->car_color}}"
+                                                            title="color"></div>
                                                     </div>
                                                     <div class="x_car_offer_img float_left">
-                                                        <img src="images/c1.png" alt="img">
+                                                    <img src="{{ asset('/storage/images')}}/{{$car->image1}}" width="200px" alt="img">
+
+
+
                                                     </div>
                                                     <div class="x_car_offer_price float_left">
                                                         <div class="x_car_offer_price_inner">
@@ -402,9 +191,9 @@ Car Bookings - Forbes Rentals
                                                     </div>
                                                     <div class="x_car_offer_bottom_btn float_left">
                                                         <ul>
-                                                            <li><a  href="/cars/{{encrypt($car->id)}}">Book now</a>
+                                                            <li><a href="/cars/{{encrypt($car->id)}}">Book now</a>
                                                             </li>
-                                                            <li><a  href="/cars/{{encrypt($car->id)}}">Details</a>
+                                                            <li><a href="/cars/{{encrypt($car->id)}}">Details</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -424,7 +213,9 @@ Car Bookings - Forbes Rentals
                                                 <div class="x_car_offer_main_boxes_wrapper float_left">
                                                     <div
                                                         class="x_car_offer_starts x_car_offer_starts_list_img float_left">
-                                                        <div class="color" style="width: 20px; height: 20px; padding: 10px; background:{{$car->car_color}}" title="color"></div>
+                                                        <div class="color"
+                                                            style="width: 20px; height: 20px; padding: 10px; background:{{$car->car_color}}"
+                                                            title="color"></div>
                                                         <div class="x_car_offer_img x_car_offer_img_list float_left">
                                                             <img src="images/c1.png" alt="img">
                                                         </div>
@@ -450,25 +241,29 @@ Car Bookings - Forbes Rentals
                                                             <ul>
                                                                 <li><a href="/cars/{{encrypt($car->id)}}">Book now</a>
                                                                 </li>
-                                                                <li><a  href="/cars/{{encrypt($car->id)}}">Details</a>
+                                                                <li><a href="/cars/{{encrypt($car->id)}}">Details</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div
                                                             class="x_car_offer_heading x_car_offer_heading_listing float_left">
                                                             <ul class="">
-                                                                <li> <a href="#"><i class="fa fa-users"></i> &nbsp;{{$car->capacity}}
+                                                                <li> <a href="#"><i class="fa fa-users"></i>
+                                                                        &nbsp;{{$car->capacity}}
                                                                         Seats</a>
                                                                 </li>
-                                                                <li> <a href="#"><i class="fa fa-clone"></i> &nbsp;{{$car->capacity}}
+                                                                <li> <a href="#"><i class="fa fa-clone"></i>
+                                                                        &nbsp;{{$car->capacity}}
                                                                         Doors</a>
                                                                 </li>
-                                                                <li> <a href="#"><i class="fa fa-shield"></i> &nbsp; {{$car->gear_type == 'automatic' ? 'Automatic' : 'Manual'}}
-                                                                        </a>
+                                                                <li> <a href="#"><i class="fa fa-shield"></i> &nbsp;
+                                                                        {{$car->gear_type == 'automatic' ? 'Automatic' : 'Manual'}}
+                                                                    </a>
                                                                 </li>
 
-                                                                <li> <a href="#"><i class="fa fa-briefcase"></i> &nbsp; {{$car->fuel == 1 ? 'Petroleumn' : 'Diesel'}}
-                                                                        </a>
+                                                                <li> <a href="#"><i class="fa fa-briefcase"></i> &nbsp;
+                                                                        {{$car->fuel == 1 ? 'Petroleumn' : 'Diesel'}}
+                                                                    </a>
                                                                 </li>
                                                                 <li> <a href="#"><i
                                                                             class="fa fa-snowflake-o"></i>&nbsp;A/C:
@@ -481,7 +276,7 @@ Car Bookings - Forbes Rentals
                                                                         <ul class="list">
                                                                             <li class="dpopy_li"><a href="#"><i
                                                                                         class="fa fa-snowflake-o"></i>
-                                                                                        {{$car->ac == 1 ? ' Air Conditioning' : 'No  Air Conditioning'}}</a>
+                                                                                    {{$car->ac == 1 ? ' Air Conditioning' : 'No  Air Conditioning'}}</a>
                                                                             </li>
                                                                             <li class="dpopy_li"><a href="#"><i
                                                                                         class="fa fa-code-fork"></i>

@@ -33,6 +33,21 @@
 </head>
 
 <body>
+
+    <style>
+        .logo-text{
+            font-size: 1rem;
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .logo-text:hover{
+            color: #fff;
+            text-decoration: none;
+            transform: translateY(-.5rem);
+        }
+
+    </style>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

@@ -1,7 +1,7 @@
 <div class="sidebar-menu">
     <div class="sidebar-header">
         <div class="logo">
-            <a href="{{ url('home') }}"><img src="{{ asset('assets/images/icon/logo.png') }}" alt="logo"></a>
+            <a href="{{ url('/') }}" class="logo-text" target="_blank">Xpedia Rentals</a>
         </div>
     </div>
     <div class="main-menu">
