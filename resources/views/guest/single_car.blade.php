@@ -83,10 +83,10 @@ Car Bookings - {{$car->car_name}}
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star-o"></i>
                                     <i class="fa fa-star-o"></i>
-                                    <span>251 Reviews</span>
+                                    <span>2 Reviews</span>
                                 </div>
                                 <div class="x_car_detail_slider_bottom_cont_right">
-                                    <h3>${{$car->hire_cost}}</h3>
+                                    <h3>₦{{$car->hire_cost}}</h3>
                                     <p><span>from</span>
                                         <br>/ day</p>
                                 </div>

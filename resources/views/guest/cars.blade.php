@@ -144,7 +144,7 @@ Car Bookings - Forbes Rentals
                                                     <div class="x_car_offer_price float_left">
                                                         <div class="x_car_offer_price_inner">
                                                             <h6><i class="fa fa-tag"></i> &nbsp;15% off Deal</h6>
-                                                            <h3>${{$car->hire_cost}}</h3>
+                                                            <h3>₦{{$car->hire_cost}}</h3>
                                                             <p><span>from</span>
                                                                 <br>/ day</p>
                                                         </div>
