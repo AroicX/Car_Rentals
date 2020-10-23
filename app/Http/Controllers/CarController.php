@@ -24,6 +24,18 @@ class CarController extends Controller
      *
      * @return array
      */
+
+    public function random_strings($length_of_string)
+    {
+        // String of all alphanumeric character
+        $str_result =
+            '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+        // Shufle the $str_result and returns substring
+        // of specified length
+        return substr(str_shuffle($str_result), 0, $length_of_string);
+    }
+
     public function getAllowedImages()
     {
         return self::$allowed_images;
@@ -74,26 +86,20 @@ class CarController extends Controller
 
         if ($request->has('image1')) {
             $image1 = $request->file('image1');
-            $filename1 = 'image1' . $request->engine_num . '.' . 'png';
+            $filename1 = $this->random_strings(12) . '.' . 'png';
             $image1->move('storage/images', $filename1);
-            // $imgdata = ['image' => $filename1];
-            // array_push($images, $imgdata);
             $image1 = $filename1;
         }
         if ($request->has('image2')) {
             $image2 = $request->file('image2');
-            $filename2 = 'image2' . $request->engine_num . '.' . 'png';
+            $filename2 = $this->random_strings(12) . '.' . 'png';
             $image2->move('storage/images', $filename2);
-            // $imgdata = ['image' => $filename2];
-            // array_push($images, $imgdata);
             $image2 = $filename2;
         }
         if ($request->has('image3')) {
             $image3 = $request->file('image3');
-            $filename3 = 'image3' . $request->engine_num . '.' . 'png';
+            $filename3 = $this->random_strings(12) . '.' . 'png';
             $image3->move('storage/images', $filename3);
-            // $imgdata = ['image' => $filename3];
-            // array_push($images, $imgdata);
             $image3 = $filename3;
         }
         if ($request->has('car_documents')) {
@@ -103,6 +109,8 @@ class CarController extends Controller
             $car_documents->move('storage/documents', $filename);
             $car_documents_name = $filename;
         }
+
+        // return [$image1, $image2, $image3];
 
         $car = new Car();
 
